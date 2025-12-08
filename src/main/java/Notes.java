@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class Notes {
 	public static void main(String[] args) {
@@ -38,6 +39,15 @@ class Notes {
 		a = cat;
 		b = dog;
 		c = horse;
+
+		Animal[] animals = new Animal[3];
+		animals[0] = cat;
+		animals[1] = dog;
+		animals[2] = horse;
+
+		for (int i = 0; i < animals.length; i++) {
+			animals[i].talk();
+		}
 
 		a.talk();
 		b.talk();
