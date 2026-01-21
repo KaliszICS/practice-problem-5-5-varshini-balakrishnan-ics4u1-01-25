@@ -27,10 +27,10 @@ class Card implements Comparable<Card> {
         int thisSuit = suitValue(this.suit);
         int otherSuit = suitValue(card.suit);
         if (thisSuit != otherSuit) {
-            teturn thisSuit - otherSuit;
+            return thisSuit - otherSuit;
         }
         int thisRank = rankValue(this.name);
-        rankValue(card.name);
+        int otherRank = rankValue(card.name);
         return thisRank - otherRank;
     }
     public int suitValue(String suit) {
