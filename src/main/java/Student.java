@@ -1,9 +1,9 @@
 class Student implements Comparable<Student> {
     private String name;
     private int age;
-    private int studentNumber;
+    private String studentNumber;
 
-    public Student(String name, int age, int studentNumber) {
+    public Student(String name, int age, String studentNumber) {
         this.name = name;
         this.age = age;
         this.studentNumber = studentNumber;
@@ -14,7 +14,7 @@ class Student implements Comparable<Student> {
     public int getAge() {
         return this.age;
     }
-    public int getStudentNumber() {
+    public String getStudentNumber() {
         return this.studentNumber;
     }
     public void setName(String name) {
@@ -23,7 +23,7 @@ class Student implements Comparable<Student> {
     public void setAge(int age) {
         this.age = age;
     }
-    public void setStudentNumber(int studentNumber) {
+    public void setStudentNumber(String studentNumber) {
         this.studentNumber = studentNumber;
     }
     @Override
@@ -32,6 +32,6 @@ class Student implements Comparable<Student> {
     }
     @Override
     public int compareTo(Student student) {
-        return this.studentNumber - student.studentNumber;
+        return this.studentNumber.compareTo(student.studentNumber);
     }
 }
