@@ -34,10 +34,11 @@ class Card implements Comparable<Card> {
         return thisRank - otherRank;
     }
     public int suitValue(String suit) {
-        if (suit.equals("Hearts")) return 0;
-        if (suit.equals("Clubs")) return 1;
-        if (suit.equals("Spades")) return 2;
-        return 3;
+        if (suit.equals("Clubs")) return 0;
+        if (suit.equals("Diamonds")) return 1;
+        if (suit.equals("Hearts")) return 2;
+        if (suit.equals("Spades")) return 3;
+        return 4;
     }
     public int rankValue(String name) {
         if(name.equals("Ace")) return 0;
