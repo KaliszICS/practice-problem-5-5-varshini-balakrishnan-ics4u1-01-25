@@ -23,12 +23,12 @@ class Student implements Comparable<Student> {
     public void setAge(int age) {
         this.age = age;
     }
-    public void setStudentNumber (int studentNumber) {
+    public void setStudentNumber(int studentNumber) {
         this.studentNumber = studentNumber;
     }
     @Override
     public String toString() {
-        return "N: " + this.name + "A: " + this.age + "SN: " + this.studentNumber;
+        return "N: " + this.name + " A: " + this.age + " SN: " + this.studentNumber;
     }
     @Override
     public int compareTo(Student student) {

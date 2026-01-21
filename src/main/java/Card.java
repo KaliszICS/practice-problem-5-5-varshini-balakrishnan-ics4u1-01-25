@@ -52,6 +52,7 @@ class Card implements Comparable<Card> {
         if(name.equals("10")) return 9;
         if(name.equals("Jack")) return 10;
         if(name.equals("Queen")) return 11;
-        return 12;
+        if(name.equals("King")) return 12;
+        return 13;
     }
 }
